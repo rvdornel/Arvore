@@ -37,4 +37,17 @@ public class Tree {
 		if (raiz.fdir != null)
 			this.raiz.fdir.inordem();
 	}
+
+	public void posordem() {
+		if (this.raiz == null)
+			return;
+		if (raiz.fesq != null)
+			raiz.fesq.posordem();
+		if (raiz.fdir != null)
+			this.raiz.fdir.posordem();
+		System.out.println(raiz.valor);
+		
+	}
+
+
 }

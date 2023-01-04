@@ -21,7 +21,7 @@ public class Main {
 		Random rand = new Random();
 		for (int i=0;i<10;i++)
 			arv.insere(rand.nextInt(10));
-		arv.inordem();
+		arv.posordem();
 	}
 
 }
